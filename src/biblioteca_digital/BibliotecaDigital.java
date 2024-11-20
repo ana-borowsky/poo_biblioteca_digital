@@ -42,31 +42,5 @@ public class BibliotecaDigital {
     public VideoDigital getVideo(int index) {
         return (index >= 0 && index < videos.size()) ? videos.get(index) : null;
     }
-    
-    public static void baixar(String item) {
-        System.out.println("Baixando " + item + ":");
-        download();
-    }
-
-    public static void visualizar(String item) {
-        System.out.println("Visualizando " + item + ":");
-        download();
-    }
-
-    public static void download() {
-        String barra = "[--------------------]";
-        int tamanho = barra.length() - 2;
-        System.out.print("[");
-
-        for (int i = 0; i < tamanho; i++) {
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                System.out.println("\nErro na simulação de download.");
-                return;
-            }
-            System.out.print("=");
-        }
-        System.out.println("] Concluído!");
-    }
+   
 }

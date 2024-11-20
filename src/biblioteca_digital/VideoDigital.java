@@ -21,10 +21,12 @@ public class VideoDigital extends ItemBibliotecaDigital implements Baixavel, Vis
     @Override
     public void baixar() {
         System.out.println("Baixando o vídeo: " + getTitulo());
+        download();
     }
 
     @Override
     public void visualizar() {
         System.out.println("Visualizando o vídeo: " + getTitulo());
+        download();
     }
 }

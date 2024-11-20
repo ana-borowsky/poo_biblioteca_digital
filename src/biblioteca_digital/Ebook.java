@@ -21,5 +21,6 @@ public class Ebook extends ItemBibliotecaDigital implements Baixavel {
     @Override
     public void baixar() {
         System.out.println("Baixando o ebook: " + getTitulo());
+        download();
     }
 }

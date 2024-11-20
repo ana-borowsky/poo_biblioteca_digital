@@ -70,7 +70,7 @@ public class BibliotecaUI {
 
             if (escolha > 0 && escolha <= biblioteca.getEbooks().size()) {
                 Ebook ebook = biblioteca.getEbook(escolha - 1);
-                BibliotecaDigital.baixar(ebook.getTitulo());
+                ebook.baixar();
             } else if (escolha == 0) {
                 System.out.println("Voltando ao menu principal...");
             } else {
@@ -104,10 +104,10 @@ public class BibliotecaUI {
 
                 switch (acao) {
                     case 1:
-                    	BibliotecaDigital.baixar(video.getTitulo());
+                    	video.baixar();
                         break;
                     case 2:
-                        BibliotecaDigital.visualizar(video.getTitulo());
+                    	video.visualizar();
                         break;
                     default:
                         System.out.println("Opção inválida.");
