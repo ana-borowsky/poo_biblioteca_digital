@@ -1,4 +1,4 @@
-package bilioteca_digital;
+package biblioteca_digital;
 
 public abstract class ItemBibliotecaDigital {
     private String titulo;

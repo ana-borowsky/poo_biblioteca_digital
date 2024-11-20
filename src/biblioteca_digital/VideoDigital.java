@@ -1,4 +1,4 @@
-package bilioteca_digital;
+package biblioteca_digital;
 
 public class VideoDigital extends ItemBibliotecaDigital implements Baixavel, Visualizavel {
 
@@ -15,7 +15,7 @@ public class VideoDigital extends ItemBibliotecaDigital implements Baixavel, Vis
 
     @Override
     public String descricao() {
-        return "Vídeo Digital: " + getTitulo() + " por " + getAutor() + ", duração: " + duracao + " minutos.";
+        return getTitulo() + " por " + getAutor() + ", duração: " + duracao + " minutos.";
     }
 
     @Override

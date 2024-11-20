@@ -1,4 +1,4 @@
-package bilioteca_digital;
+package biblioteca_digital;
 
 public class Ebook extends ItemBibliotecaDigital implements Baixavel {
 
@@ -15,7 +15,7 @@ public class Ebook extends ItemBibliotecaDigital implements Baixavel {
 
     @Override
     public String descricao() {
-        return "Ebook: " + getTitulo() + " por " + getAutor() + ", " + numPaginas + " páginas.";
+        return getTitulo() + " por " + getAutor() + ", " + numPaginas + " páginas.";
     }
 
     @Override
